@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,800');
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px "Open Sans", sans-serif;
+}
+
+.main-heading {
+    font-size: 44px;
+    font-weight: bolder;
+    color: #3F51B5;
+    text-align: center;
+    margin: 32px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diff-buttons {
+    margin-top: 16px;
+}
+
+.diff-buttons button {
+    padding: 8px 16px;
+    display: block;
+    width: 300px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    background: #3F51B5;
+    color: #fff;
+    border-radius: 4px;
+    border-bottom: 8px solid #303F9F;
+    transition: all .2s;
+}
+
+.diff-buttons button:hover {
+    cursor: pointer;
+    background: #303F9F;
+}
+
+.diff-buttons button:focus {
+    background: #303F9F;
+    outline: none;
+    width: 340px;
+}
+
+.question {
+    color: #666;
+    width: 950px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.options {
+    list-style-type: none;
+    width: 950px;
+    margin: 0;
+    padding: 0;
+}
+
+.options li {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    transition: all .2s;
+    font-weight: 600;
+}
+
+.option-tag {
+    font-weight: 800;
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+.options li:hover {
+    cursor: pointer;
+    background: rgba(63, 81, 181, 0.8);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    background: rgba(63, 81, 181, 1);
+    color: #fff;
+}
+
+.options .selected:hover {
+    background: rgba(63, 81, 181, 1);
+}
+
+.prev-next-container {
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+
+.prev-btn {
+    width: 470px;
+    display: block;
+    padding: 16px;
+    background: #607D8B;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.next-btn {
+    width: 470px;
+    display: block;
+    padding: 16px;
+    background: #4CAF50;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.restart-btn {
+    width: 950px;
+    margin: 0 auto;
+    display: block;
+    padding: 16px;
+    background: #3F51B5;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 8px solid #303F9F;
+}
+
+.restart-btn:hover, .next-btn:hover, .prev-btn:hover {
+    cursor: pointer;
+}
+
+.prev-btn:disabled {
+    background: #CFD8DC;
+    cursor: not-allowed;
+}
+
+.fa-times {
+    color: #ff0033;
+}
+
+.fa-check {
+    color: #4CAF50;
+}
